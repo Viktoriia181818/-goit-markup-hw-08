@@ -1,4 +1,8 @@
 .page-header--logo__link {
+    @media (min-width:480px) {
+            margin-bottom: 16px;
+    
+        }
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
     font-size: 26px;

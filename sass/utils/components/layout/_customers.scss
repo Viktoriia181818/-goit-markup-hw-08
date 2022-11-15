@@ -1,4 +1,5 @@
 .regular-customers {
+    
     margin-bottom: 50px;
     font-weight: 700;
         font-size: 36px;
@@ -10,7 +11,13 @@
 
 .regular-customers__customers--list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
+    display: flex;
+    @media screen (min-width:480px) {
+            margin-bottom: 60px;
+        }
 }
 
 .regular-customers__customers--link {

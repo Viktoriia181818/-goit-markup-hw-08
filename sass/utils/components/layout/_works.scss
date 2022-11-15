@@ -1,7 +1,14 @@
 .work-info__section--work {
+    @media screen and(min-width:480px){
+        display: none; 
+    }
+
+    @media screen and(min-width:1200px) {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+        justify-content: center;
+        gap: 30px;
+    }
+    
 }
  
 
@@ -29,12 +36,23 @@
     width: 100%;
 }
 
-.work-info {
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
-}
+
+    .work-info {
+        @media screen and(min-width:480px) {
+                display: none;
+            }
+        
+            @media screen and(min-width:1200px) {
+                display: flex;
+                    justify-content: center;
+                    margin-bottom: 50px;
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 42px;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    color: #212121;
+            }
+      
+        }
+    
