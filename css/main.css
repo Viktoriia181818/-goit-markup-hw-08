@@ -937,6 +937,11 @@ body {
   gap: 30px;
   display: flex;
 }
+@media screen and (min-width: 480px) {
+  .regular-customers__customers--list {
+    margin-bottom: 60px;
+  }
+}
 
 .regular-customers__customers--link {
   display: -webkit-box;
