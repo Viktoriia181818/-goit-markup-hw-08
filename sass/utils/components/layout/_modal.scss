@@ -17,10 +17,11 @@
 
 
 .modal-social__window {
+    margin: 0 15px;
     position: absolute;
     padding: 40px;
     display: flex;
-    width: 528px;
+    max-width: 528px;
     background-color: var(--primary-white-color);
     justify-content: center;
     align-items: flex-start;

@@ -19,10 +19,10 @@
         <div class="container header--block">
         <a class="page-header--logo__link" href="./index.html">Web<span class="logo--header">Studio</span></a>
         <nav>
-            <button type="button" class="button-menu">
-                <svg width="24" height="24">
-                    <use href="./images/sprite.svg#icon-menu_24px"></use>
-                    <use href="./images/sprite.svg#icon-menu_close"></use>
+            <button type="button" class="button-menu is-open" data-menu-button>
+                <svg aria-label="Переключатель мобильного меню">
+                    <use class="menu" href="./images/sprite.svg#icon-menu_24px"></use>
+                    <use  class="cross" href="./images/sprite.svg#icon-menu_close"></use>
                 </svg>
             </button>
         
@@ -431,5 +431,6 @@
     </div>
 </footer>
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

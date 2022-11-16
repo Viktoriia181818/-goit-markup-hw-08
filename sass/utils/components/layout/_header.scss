@@ -16,6 +16,7 @@
     @media  screen and (min-width:480) {
         font-size: 26px;
         line-height: 42px;
+        
     }
     margin-bottom: 30px;
     color: var(--primary-white-color);
@@ -33,6 +34,7 @@
 
 .header--block {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }

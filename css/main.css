@@ -183,19 +183,37 @@ body {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.button-menu {
-  position: relative;
-  width: 40px;
-  height: 40px;
-  left: 344px;
-  top: 7px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
+@media screen and (min-width: 480px) {
+  .button-menu {
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+  }
+}
+
+.button-menu .cross {
+  display: none;
+}
+
+.button-menu.is-open .cross {
+  display: block;
+}
+
+.button-menu.is-open .menu {
+  display: none;
 }
 
 .page-header--logo__link {
@@ -213,8 +231,7 @@ body {
 }
 @media (min-width: 480px) {
   .page-header--logo__link {
-    margin-bottom: 16px;
-    position: relative;
+    padding: 16px 0;
   }
 }
 .page-header--logo__link:hover, .page-header--logo__link:focus {
@@ -337,6 +354,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -422,12 +442,13 @@ body {
 }
 
 .modal-social__window {
+  margin: 0 15px;
   position: absolute;
   padding: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 528px;
+  max-width: 528px;
   background-color: var(--primary-white-color);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1004,7 +1025,7 @@ body {
             align-items: baseline;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .footer .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1130,7 +1151,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .form-footer__test {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
