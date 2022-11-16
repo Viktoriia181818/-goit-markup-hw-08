@@ -23,7 +23,7 @@
 
 .site-nav  {
     @media screen and(max-width:480px) {
-                display: block;
+                display: none;
         }
     position: relative;
     color: var(--title-text-color);

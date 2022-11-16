@@ -17,8 +17,8 @@
             margin-bottom: 32px;
     }
 
-        // display: inline-flex;
-        // align-items: center;
+        display: inline-flex;
+        align-items: center;
         color: #757575;
         text-decoration: none;
         font-weight: 500;
@@ -41,7 +41,7 @@
 }
 .contact-menu  {
     @media screen and(max-width:480px) {
-        display: block;
+        display: none;
     
     }
     display: flex;
