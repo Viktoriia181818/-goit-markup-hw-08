@@ -1103,11 +1103,15 @@ body {
   margin-left: auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .form-footer__test {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1135,6 +1139,11 @@ body {
   fill: currentColor;
 }
 
+@media screen and (min-width: 1200px) {
+  .social-footer {
+    margin-left: 70px;
+  }
+}
 .social-footer__socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1144,6 +1153,12 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 30px;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .filter-portfolio {
