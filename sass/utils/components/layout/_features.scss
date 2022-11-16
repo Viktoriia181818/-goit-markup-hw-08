@@ -1,7 +1,16 @@
 .features-class__features {
+    
     @media  screen and (min-width:480px) {
         margin-bottom: 16px;
         padding-bottom: 16px;
+    }
+
+    @media screen and(max-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
     }
     @media screen and(min-width:1200px){
     display: flex;
