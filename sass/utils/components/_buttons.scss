@@ -130,15 +130,15 @@
 
     }
 
-         .button-menu .cross {
+         .button-menu .menu {
               display: none;
           }
     
-          .button-menu.is-open .cross {
+          .button-menu.is-open .menu {
               display: block;
           }
 
-          .button-menu.is-open .menu {
+          .button-menu.is-open .cross {
             display: none;
           }
     
