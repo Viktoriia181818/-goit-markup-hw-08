@@ -6,6 +6,9 @@
 
 
 .site-nav__item.current::after {
+    @media screen and(max-width:480px) {
+        content: none;
+    }
     position: absolute;
     content: "";
     display: block;

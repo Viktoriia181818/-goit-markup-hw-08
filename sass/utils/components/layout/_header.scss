@@ -46,7 +46,6 @@
     top: 100%;
     left: 0;
     width: 100%;
-    height: 480px;
     background-color: #ECECEC;
     padding: 20px;
     text-align: center;
@@ -55,4 +54,22 @@
     &.is-open {
         display: block;
     }
+}
+
+
+    .social-mobile {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    }
+
+@media screen and (max-width:480px) {
+    .social-mobile__item {
+            display: flex;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+            color: #2196F3;
+        }
 }
