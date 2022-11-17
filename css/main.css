@@ -1336,9 +1336,6 @@ body {
 }
 @media screen and (max-width: 480px) {
   .filter-portfolio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
