@@ -287,11 +287,6 @@ body {
   background-color: var(--accent-color);
   z-index: 1;
 }
-@media screen and (max-width: 480px) {
-  .site-nav__item.current::after {
-    content: none;
-  }
-}
 
 .site-nav {
   position: relative;
@@ -339,6 +334,58 @@ body {
     font-weight: 500;
     font-size: 40px;
   }
+}
+
+.mobile-menu {
+  text-align: initial;
+  margin-left: 40px;
+}
+
+.mobile-menu__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.mobile-menu__item:hover, .mobile-menu__item:focus {
+  color: var(--accent-color);
+}
+
+.contact-live {
+  text-align: initial;
+  margin-left: 40px;
+  padding-top: 302px;
+}
+
+.contact-live__mobile {
+  list-style: none;
+}
+
+.contact-live-mobile__item {
+  margin-bottom: 32px;
+}
+
+.contact-menu__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.contact-menu__tel:hover, .contact-menu__tel:focus {
+  color: var(--accent-color);
+}
+
+.contact-live-mobile__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.contact-live-mobile__mail:hover, .contact-live-mobile__mail:focus {
+  color: var(--accent-color);
 }
 
 .hero-primary {
