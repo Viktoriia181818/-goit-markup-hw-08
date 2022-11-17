@@ -141,10 +141,7 @@ margin-bottom: 20px;
 .form-footer__test {
     @media screen and(min-width:480px) {
         justify-content: center;
-        display: flex;
-        gap: 12px;
     }
-    
     display: flex;
         gap: 12px;
         flex-wrap: wrap;
@@ -163,7 +160,12 @@ margin-bottom: 20px;
 .social-footer__footer--social--link {
     fill: currentColor;
 }
-
+@media screen and(min-width:768px) {
+    .social-footer {
+    margin-right: 89px;
+    padding-bottom: 114px;
+}
+}
 @media screen and(min-width:1200px) {
     .social-footer {
             margin-left: 70px;
@@ -180,4 +182,11 @@ margin-bottom: 20px;
 
 .footer .container {
     display: flex;
+    flex-wrap: wrap;
+
+    @media screen and(max-width:768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }

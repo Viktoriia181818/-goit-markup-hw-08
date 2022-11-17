@@ -12,7 +12,31 @@
     flex-wrap: wrap;
     gap: 30px;
     box-sizing: border-box;
-    justify-content: center;
+
+    @media screen and (max-width:480px) {
+
+        justify-content: center;
+    }
+
+    @media screen and(min-width:768px) {
+            flex-wrap: wrap;
+            display: flex;
+            gap: 30px;
+    
+            .portfolio-themes__item--port {
+                width: calc(50% - 15px);
+            }
+    
+        }
+    
+        @media screen and(min-width:1200px) {
+            flex-wrap: nowrap;
+    
+            .portfolio-themes__item--port {
+                width: auto;
+            }
+    
+        }
 
 }
 
