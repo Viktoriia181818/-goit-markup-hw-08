@@ -114,7 +114,7 @@
 
 
 .button-menu {
-    @media screen and (min-width:480px) {
+    @media screen and (max-width:767px) {
     width: 40px;
         height: 40px;
         display: flex;
@@ -134,6 +134,7 @@
         @media screen and (min-width:768px) {
             display:none;
         }
+        
     }
 
          .button-menu .menu {
