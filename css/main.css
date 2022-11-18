@@ -442,6 +442,13 @@ body {
             justify-content: space-between;
   }
 }
+@media screen and (max-width: 767px) {
+  .header--block {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 
 .live-menu {
   display: none;
