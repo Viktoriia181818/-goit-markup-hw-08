@@ -1,11 +1,16 @@
 .filter-portfolio {
     @media screen and(max-width:480px) {
         flex-wrap: wrap;
+        justify-content: flex-start;
     }
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-    gap: 8px;
+    gap: 15px 8px;
+}
+
+.item {
+    white-space: nowrap;
 }
 .portfolio-themes {
     display: flex;
