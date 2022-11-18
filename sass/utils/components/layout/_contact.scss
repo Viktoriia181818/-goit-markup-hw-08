@@ -5,10 +5,13 @@
 }
 
 .contacts-footer {
-    margin-left: 215px;
-@media screen and(min-width:1199) {
-    flex-basis: calc(50% - 10px);
+@media screen and(max-width:768px) {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+        
 }
 
 .contact-menu__link {

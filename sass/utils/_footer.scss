@@ -48,8 +48,8 @@
 .footer-check__addres--link {
     color: #ffffff;
     // display: block;
-    margin-bottom: 9px;
-
+    margin: 0 auto 9px;
+    display: block;
     font-style: normal;
     text-decoration: none;
     font-size: 14px;
@@ -60,6 +60,13 @@
             color: var(--accent-color);
             font-style: normal;
         }
+}
+
+.footer-check__item {
+    @media screen and(max-width:768px) {
+        display: block;
+        text-align: center;
+    }
 }
 
 .footer-check__link {
@@ -97,13 +104,13 @@ color: #FFFFFF99;
     color: #FFFFFF;
 }
 .form-footer__input--mail {
-    // @media screen and (min-width:480px) {
-    //     width: 100%;
-    // }
+    @media screen and(min-width:1200px) {
+        max-width: 358px;
+    }
     color: #FFFFFF;
     background-color: transparent;
-    max-width: 358px;
-    width: 358px;
+    max-width: 450px;
+    width: 450px;
     height: 50px;
     outline: 0;
     padding: 15px 16px;
@@ -178,9 +185,8 @@ margin-bottom: 20px;
 
 @media screen and(min-width:768px) {
     .social-footer {
-    margin-right: 89px;
     padding-bottom: 114px;
-    width: calc(50% - 10px);
+    width: 50%;
 }
 }
 @media screen and(min-width:1200px) {
@@ -206,7 +212,7 @@ margin-bottom: 20px;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        gap: 60px 20px;
+        row-gap: 60px;
     }
 
     @media screen and(min-width:1200px) {

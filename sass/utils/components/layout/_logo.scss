@@ -39,6 +39,14 @@
     margin-bottom: 20px;
 }
 
+.footer .footer-check__logo {
+    @media screen and(max-width:768px) {
+        display: flex;
+        justify-content: center;
+    
+}
+}
+
 .footer .footer-check__logo--part {
     color: #ffffff;
     text-decoration: none;
