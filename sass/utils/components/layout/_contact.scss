@@ -6,6 +6,9 @@
 
 .contacts-footer {
     margin-left: 215px;
+@media screen and(min-width:1199) {
+    flex-basis: calc(50% - 10px);
+}
 }
 
 .contact-menu__link {
