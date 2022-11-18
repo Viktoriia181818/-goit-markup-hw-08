@@ -1,4 +1,5 @@
 .work-info__section--work {
+    margin-bottom: 94px;
     @media screen and(min-width:480px){
         display: none; 
     }
@@ -38,7 +39,7 @@
 
 
     .work-info {
-        @media screen and(min-width:480px) {
+        @media screen and(max-width:1199px) {
                 display: none;
             }
         

@@ -33,36 +33,30 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media sreen and (min-width: 480px) {
+@media sreen and (max-width: 480px) {
   .container {
     max-width: 480px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
     max-width: 768px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .container {
     max-width: 1200px;
   }
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-@media screen and (max-width: 480px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .section .section .work-info__section--work {
+    display: none;
   }
 }
-@media screen and (max-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .section .work-info {
+    display: none;
   }
 }
 
@@ -456,10 +450,16 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-@media screen and (min-width: 480) {
+@media screen and (max-width: 767px) {
   .hero-primary__hero--title {
+    font-style: normal;
+    font-weight: 900;
     font-size: 26px;
-    line-height: 42px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
   }
 }
 
@@ -540,7 +540,7 @@ body {
   gap: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .contacts-footer {
     width: 50%;
     display: -webkit-box;
@@ -616,6 +616,8 @@ body {
   .contact-menu {
     display: block;
     padding: 0;
+    margin-top: 21px;
+    margin-bottom: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -676,7 +678,7 @@ body {
 }
 
 .mobile-menu__link {
-  margin-bottom: 15px;
+  margin-bottom: 32px;
 }
 
 .modal-social {
@@ -928,10 +930,13 @@ body {
 }
 
 .features-class__features {
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1010,7 +1015,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .features-class__pages {
     width: 100%;
   }
@@ -1025,6 +1030,13 @@ body {
   margin-bottom: 10px;
 }
 
+.features-class__features--section {
+  padding-top: 60px;
+}
+
+.work-info__section--work {
+  margin-bottom: 94px;
+}
 @media screen and (min-width: 480px) {
   .work-info__section--work {
     display: none;
@@ -1066,7 +1078,7 @@ body {
   width: 100%;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .work-info {
     display: none;
   }
@@ -1111,6 +1123,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .team-primary__team {
@@ -1138,6 +1151,7 @@ body {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-top: 60px;
 }
 
 .team-primary__description--title {
@@ -1262,6 +1276,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  padding-top: 60px;
 }
 
 .regular-customers__customers--list {
@@ -1274,8 +1289,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
+  margin-bottom: 94px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .regular-customers__customers--list {
     margin-bottom: 60px;
   }
@@ -1323,7 +1339,7 @@ body {
             align-items: baseline;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .footer .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1416,7 +1432,7 @@ body {
   color: #FFFFFF;
   background-color: transparent;
   max-width: 450px;
-  width: 450px;
+  width: 100%;
   height: 50px;
   outline: 0;
   padding: 15px 16px;
@@ -1424,11 +1440,6 @@ body {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-}
-@media screen and (min-width: 1200px) {
-  .form-footer__input--mail {
-    max-width: 358px;
-  }
 }
 .form-footer__input--mail:hover, .form-footer__input--mail:focus {
   border: 1px solid var(--accent-color);
@@ -1451,6 +1462,7 @@ body {
 .form-footer {
   width: 100%;
   max-width: 570px;
+  margin-left: auto;
 }
 
 .form-footer__test {
@@ -1525,7 +1537,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px;
 }
 
 .footer .container {
@@ -1535,7 +1546,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .footer .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1564,6 +1575,9 @@ body {
           justify-content: center;
   margin-bottom: 50px;
   gap: 15px 8px;
+  margin-top: 60px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media screen and (max-width: 480px) {
   .filter-portfolio {
@@ -1588,15 +1602,18 @@ body {
   gap: 30px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .portfolio-themes {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1199px) {
   .portfolio-themes {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1604,6 +1621,9 @@ body {
     display: -ms-flexbox;
     display: flex;
     gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .portfolio-themes .portfolio-themes__item--port {
     width: calc(50% - 15px);

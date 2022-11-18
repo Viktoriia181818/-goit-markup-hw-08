@@ -7,6 +7,7 @@
         text-align: center;
         letter-spacing: 0.03em;
         color: #212121;
+        padding-top: 60px;
 }
 
 .regular-customers__customers--list {
@@ -14,7 +15,8 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    @media screen and (min-width:480px) {
+    margin-bottom: 94px;
+    @media screen and (max-width:1199px) {
             margin-bottom: 60px;
         }
 }

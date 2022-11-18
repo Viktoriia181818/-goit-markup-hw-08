@@ -41,10 +41,16 @@
 
 
 .hero-primary__hero--title {
-    @media  screen and (min-width:480) {
+    @media  screen and (max-width:767px) {
+    font-style: normal;
+        font-weight: 900;
         font-size: 26px;
-        line-height: 42px;
-        
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
     }
     margin-bottom: 30px;
     color: var(--primary-white-color);
