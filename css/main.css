@@ -35,7 +35,7 @@ body {
 }
 @media sreen and (max-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1034,6 +1034,12 @@ body {
   padding-top: 60px;
 }
 
+@media screen and (max-width: 767) {
+  .features-class__item {
+    width: 100%;
+  }
+}
+
 .work-info__section--work {
   margin-bottom: 94px;
 }
@@ -1192,6 +1198,8 @@ body {
 
 .team-primary {
   background-color: #F5F4FA;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .team-primary__item {
@@ -1288,8 +1296,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1299,6 +1305,8 @@ body {
 @media screen and (max-width: 1199px) {
   .regular-customers__customers--list {
     margin-bottom: 60px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
