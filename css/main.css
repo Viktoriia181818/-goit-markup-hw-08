@@ -1053,9 +1053,6 @@ body {
   }
 }
 
-.work-info__section--work {
-  margin-bottom: 94px;
-}
 @media screen and (min-width: 480px) {
   .work-info__section--work {
     display: none;
@@ -1318,7 +1315,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
-  margin-bottom: 94px;
 }
 @media screen and (max-width: 1199px) {
   .regular-customers__customers--list {
