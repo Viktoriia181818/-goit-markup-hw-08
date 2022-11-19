@@ -51,6 +51,7 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    
 
 }
 
@@ -70,18 +71,29 @@
     line-height: 1.7;
 }
 
+
 .features-class__pages {
     @media screen and (max-width:1199px) {
             width: 100%;
         }
+    background-color: #F5F4FA;
     width: 270px;
     height: 120px;
     padding: 25px 101px;
     margin-bottom: 30px;
-    background: #F5F4FA;
     border-radius: 4px;
-    justify-content: center;
 }
+
+@media screen and(max-width:767px) {
+.features-class__item__icon {
+        background-color: #F5F4FA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+}
+
 
 .title {
     color: var(--title-text-color);
