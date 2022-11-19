@@ -1061,6 +1061,11 @@ body {
 .work-info__section--item {
   position: relative;
 }
+@media screen and (max-width: 1199px) {
+  .work-info__section--item {
+    display: none;
+  }
+}
 
 .work-info__work--text {
   position: absolute;
