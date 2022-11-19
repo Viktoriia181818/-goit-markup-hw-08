@@ -973,12 +973,11 @@ body {
   padding-bottom: 0;
 }
 
-.features-class__section--title {
+.features-class__title--features {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   color: #212121;
   margin-top: 0;
   margin-bottom: 10px;
@@ -986,6 +985,14 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-top: 30px;
+}
+@media screen and (max-width: 767px) {
+  .features-class__title--features {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+  }
 }
 
 .features-class__features--text {
@@ -998,9 +1005,10 @@ body {
   font-size: 14px;
   line-height: 1.7;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .features-class__features--text {
     margin-bottom: 30px;
+    text-align: center;
   }
 }
 
@@ -1009,7 +1017,6 @@ body {
   width: 270px;
   height: 120px;
   padding: 25px 101px;
-  margin-bottom: 30px;
   border-radius: 4px;
 }
 @media screen and (max-width: 1199px) {
