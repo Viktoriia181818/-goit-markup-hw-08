@@ -102,9 +102,12 @@
     margin-bottom: 10px;
 }
 
+@media screen and(max-width:1199px) {
 .features-class__features--section {
-    padding-top: 60px;
+        padding-top: 60px;
+    }
 }
+
 
 .features-class__item {
     @media screen and(max-width:767) {
