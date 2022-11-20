@@ -2,7 +2,6 @@
 
     // justify-content: center;
     background-color: #2F303A;
-    padding: 60px 0;
 }
 
 // /.container/ 
@@ -108,6 +107,12 @@ color: #FFFFFF99;
     color: #FFFFFF;
 }
 .form-footer__input--mail {
+    @media screen and(min-width:1200px) {
+        width: 358px;
+    }
+    @media screen and(max-width:1199px) {
+        
+    }
     color: #FFFFFF;
     background-color: transparent;
     height: 50px;
@@ -122,7 +127,7 @@ color: #FFFFFF99;
         }
         @media screen and(max-width:1199px) {
             width: 450px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 }
 

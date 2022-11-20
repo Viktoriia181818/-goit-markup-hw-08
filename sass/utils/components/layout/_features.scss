@@ -111,11 +111,7 @@
     margin-bottom: 10px;
 }
 
-@media screen and(max-width:1199px) {
-.features-class__features--section {
-        padding-top: 60px;
-    }
-}
+
 
 
 .features-class__item {
@@ -125,9 +121,9 @@
 }
 
 .features-class__features--section {
-    @media screen and(max-width:1199px) {
-        margin-bottom: 60px;
-    }
+    // @media screen and(max-width:1199px) {
+    //     margin-bottom: 60px;
+    // }
     padding-bottom: 0;
 }
 
