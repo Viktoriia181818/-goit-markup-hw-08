@@ -79,6 +79,10 @@ color: #FFFFFF99;
 }
 
 .footer-check__contact--footer {
+    @media screen and(max-width:1199px) {
+            text-align: center;
+            display: block;
+        }
     color: #FFFFFF99;
     text-decoration: none;
     font-style: normal;
@@ -106,8 +110,6 @@ color: #FFFFFF99;
 .form-footer__input--mail {
     color: #FFFFFF;
     background-color: transparent;
-    max-width: 450px;
-    width: 100%;
     height: 50px;
     outline: 0;
     padding: 15px 16px;
@@ -117,6 +119,10 @@ color: #FFFFFF99;
     &:hover,
     &:focus {
             border: 1px solid var(--accent-color);
+        }
+        @media screen and(max-width:1199px) {
+            width: 450px;
+            margin-bottom: 30px;
         }
 }
 
@@ -140,6 +146,7 @@ margin-bottom: 20px;
     width: 100%;
     max-width: 570px;
     margin-left: auto;
+    margin-right: auto;
     
 }
 
@@ -151,7 +158,7 @@ margin-bottom: 20px;
         justify-content: center;
     }
 
-    @media screen and(max-width:768px) {
+    @media screen and(max-width:1199px) {
         flex-direction: column;
         align-items: center;
     }
@@ -183,7 +190,6 @@ margin-bottom: 20px;
 
 @media screen and(min-width:768px) {
     .social-footer {
-    padding-bottom: 114px;
     width: 50%;
 }
 }

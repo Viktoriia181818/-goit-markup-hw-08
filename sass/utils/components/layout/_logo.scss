@@ -29,6 +29,10 @@
 
 }
 .footer .footer-check__logo {
+    @media screen and(max-width:1199px) {
+        display: block;
+        text-align: center;
+    }
     font-family: 'Raleway';
     color: var(--accent-color);
     font-weight: 700;
