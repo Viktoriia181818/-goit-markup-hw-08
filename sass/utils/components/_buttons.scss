@@ -130,7 +130,20 @@
     }
 
     }
+    .button-menu__svg {
+        max-width: 26px;
+        max-height: 16px;
+    }
 
+
+    .cross {
+        max-width: 19px;
+        max-height: 19px;
+    }
+    .menu {
+        width: 24px;
+        height: 16px;
+    }
     .button-menu {
         @media screen and (min-width:768px) {
             display:none;

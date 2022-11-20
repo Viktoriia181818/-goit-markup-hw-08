@@ -28,6 +28,10 @@
 }
 
 .team-primary__team--title {
+    @media screen and(max-width:1199px) {
+            font-size: 28px;
+            line-height: 33px;
+    }
     margin-bottom: 30px;
     color: var(--title-text-color);
     font-weight: 700;
