@@ -1041,12 +1041,6 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-@media screen and (min-width: 767px) {
-  .features-class__features {
-    margin-bottom: 16px;
-    padding-bottom: 16px;
-  }
-}
 @media screen and (min-width: 768px) {
   .features-class__features {
     -ms-flex-wrap: wrap;
