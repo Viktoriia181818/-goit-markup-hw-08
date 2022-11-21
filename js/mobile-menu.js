@@ -21,4 +21,3 @@
         menuBtnRef.setAttribute('aria-expanded', false);
     });
 })();
-
