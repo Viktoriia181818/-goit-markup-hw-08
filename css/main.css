@@ -804,8 +804,8 @@ body {
 }
 @media screen and (max-width: 1199px) {
   .modal-social__window {
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
+    width: 100%;
   }
 }
 

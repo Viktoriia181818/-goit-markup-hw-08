@@ -18,8 +18,8 @@
 
 .modal-social__window {
     @media screen and(max-width:1199px) {
-        width: 450px;
-            height: 609px;
+        max-width: 450px;
+            width: 100%;
     }
    
     margin: 0 15px;
