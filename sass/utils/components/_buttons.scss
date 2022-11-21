@@ -133,6 +133,12 @@
     }
 
     }
+        @media screen and(min-width:768px) {
+        .button-menu.is-open {
+                display: none;
+            }
+        }
+        
     .button-menu__svg {
         max-width: 26px;
         max-height: 16px;
