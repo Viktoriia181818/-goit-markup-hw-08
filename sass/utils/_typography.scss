@@ -3,6 +3,13 @@ body {
     color: var(--title-text-color);
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
+
+    @media screen and(max-width:767px) {
+        &.lock {
+                overflow: hidden;
+            }
+    }
+   
 }
 @media screen and(min-width:1200px) {
     .section {

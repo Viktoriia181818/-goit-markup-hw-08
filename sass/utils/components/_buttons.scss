@@ -117,8 +117,8 @@
 
 .button-menu {
     @media screen and (max-width:767px) {
-    width: 40px;
-        height: 40px;
+        max-width: 40px;
+        max-height: 40px;
         display: flex;
         margin: 0;
         padding: 0;
@@ -158,12 +158,17 @@
               display: none;
           }
     
-          .button-menu.is-open .menu {
-              display: block;
+          @media screen and(max-width:1199px) {
+            .button-menu.is-open .menu {
+                    display: block;
+                }
           }
-
-          .button-menu.is-open .cross {
-            display: none;
+          
+          @media screen and(max-width:1199px) {
+            .button-menu.is-open .cross {
+                    display: none;
+                }
           }
+         
     
 
