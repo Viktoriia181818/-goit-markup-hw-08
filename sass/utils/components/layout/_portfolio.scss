@@ -30,7 +30,7 @@
             flex-wrap: wrap;
             display: flex;
             gap: 30px;
-            justify-content: center;
+            justify-content: flex-start;
     
             .portfolio-themes__item--port {
                 width: calc(50% - 15px);
