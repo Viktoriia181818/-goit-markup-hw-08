@@ -113,6 +113,11 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
 }
+@media screen and (max-width: 1199px) {
+  .form-footer__button--mail {
+    margin-top: 20px;
+  }
+}
 
 .modal-social__send--button {
   background-color: var(--accent-color);

@@ -1,4 +1,7 @@
 .form-footer__button--mail {
+    @media screen and(max-width:1199px) {
+        margin-top: 20px;
+    }
     display: flex;
     justify-content: center;
     align-items: center;
