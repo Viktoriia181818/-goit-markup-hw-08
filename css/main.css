@@ -45,6 +45,7 @@ body {
 @media screen and (min-width: 1200px) {
   .section-work {
     padding-bottom: 94px;
+    padding-top: 94px;
   }
 }
 .container {
@@ -837,6 +838,7 @@ body {
   color: #757575;
   margin-top: 20px;
   text-align: center;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 1199px) {
   .modal-social__privacy--modal {
@@ -846,6 +848,12 @@ body {
 
 .modal-social__privacy--modal label {
   position: relative;
+}
+@media screen and (max-width: 1199px) {
+  .modal-social__privacy--modal label {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .modal-social__privacy--modal input {
@@ -1773,7 +1781,7 @@ body {
             justify-content: center;
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 767px) {
   .portfolio-themes {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
